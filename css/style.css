@@ -1,0 +1,459 @@
+/* Import Fonts */
+@import url(./fonts.css);
+
+
+/*--------------------------------------- Variables CSS ---------------------------------*/
+html,
+body {
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+:root {
+    --primary-color: #4458dc;
+    --primary-color2: #854fee;
+    --title-color: #141313;
+    --text-color: #777777;
+    --border-color: #201f1f17;
+    --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+
+    /*-------- font family variables -------*/
+    --roboto: 'Roboto', cursive;
+}
+
+/*--------------------------------------- End Vriables CSS ---------------------------------*/
+
+/*--------------------------------------- Globals CSS ---------------------------------*/
+.heading {
+    font: normal bold 35px/40px var(--roboto);
+    color: #007BFF;
+}
+
+.para {
+    font: normal 600 16px/25px var(--roboto);
+    color: var(--text-color)
+}
+
+/*--------------------------------------- End Globals CSS ---------------------------------*/
+
+
+
+/* Header Area */
+.site_header {
+    background: url(../assets/banner/Banner_image.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light {
+    padding: 1.7rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.navbar-brand {
+    padding: 0 2rem 0 5rem;
+    font: normal bold 30px/30px var(--roboto);
+    color: white !important;
+}
+
+.nav-item ul li {
+    padding: 1rem 0;
+}
+
+.nav-item .active {
+    color: white !important;
+}
+
+.nav-item a {
+    font: normal 500 16px/12px var(--roboto);
+    padding: 1rem 2rem;
+    color: rgba(255, 255, 255, 0.705) !important;
+
+}
+
+.dropdown-menu {
+    background: #201d1d !important;
+}
+
+.dropdown-menu a {
+    color: white !important;
+}
+
+.dropdown-item:hover {
+    background: #4458dca1;
+
+}
+
+.nav-item:last-child {
+    padding-right: 4rem;
+}
+
+/* ------------------ Sticky ---------------------- */
+
+.sticky_padding {
+    padding: 1rem 0 !important;
+    transition: all .5s ease !important;
+}
+
+.navbar_fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #007BFF;
+    box-shadow: var(--box-shadow);
+    z-index: 999;
+    transition: background 1s ease;
+}
+
+/* ---------------------------------------- */
+
+
+
+/* End Header Area */
+
+
+/* Banner Area */
+.banner_area {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.banner_area h1 {
+    font: normal bold 40px/60px serif;
+    color: whitesmoke;
+}
+
+.banner_area h2 {
+    font: normal bold 40px/70px var(--roboto);
+    color: #FFFFFF;
+}
+
+.banner_area h3 {
+    font: normal 600 25px/30px var(--roboto);
+    color: rgba(255, 255, 255, 0.747);
+}
+
+/* End Banner Area */
+
+/* Start About Area */
+.about_area {
+    padding: 5rem 0;
+}
+
+.about_img img {
+    border-radius: 5px;
+    box-shadow: var(--shadow-color);
+}
+
+.panel {
+    background: white;
+    box-shadow: var(--box-shadow);
+    background-size: cover;
+    padding: 25px 20px;
+    margin-right: -50px;
+}
+
+.panel h3 {
+    font: normal 600 30px/40px serif;
+    color: #007BFF;
+}
+
+.panel h1 {
+    font: normal bold 40px/50px var(--roboto);
+}
+
+.panel p {
+    font: normal 500 16px/20px var(--roboto);
+    color: #777777;
+    margin: 1rem 0;
+}
+
+.panel .row {
+    margin: 2rem 0;
+}
+
+.panel .row h6 {
+    font-size: 14px;
+    font-family: monospace;
+}
+
+.panel .row h6 b {
+    font-family: cursive;
+}
+
+.panel .social {
+    margin: 1.5rem 0;
+    text-shadow: var(--box-shadow);
+}
+
+.panel .social i {
+    font-size: 35px;
+    margin-right: 1rem;
+    color: var(--text-color);
+}
+
+.panel .social i:hover {
+    color: var(--primary-color);
+    transition: .3s ease;
+}
+
+/* Team */
+.team {
+    padding: 5rem 0;
+}
+
+.team_member h6 {
+    font: normal 500 25px/35px var(--roboto);
+}
+
+.team_member p {
+    font: normal 500 13px/20px var(--roboto);
+    color: (var(--text-color));
+}
+
+.member_social {
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    padding: 1rem 0;
+}
+
+.member_social i {
+    margin-right: 1rem;
+    font-size: 20px;
+    background: whitesmoke;
+}
+
+.member_social i:hover {
+    color: rgb(0, 4, 255);
+    transition: 0.3s ease;
+}
+
+.teamMember_1 {
+    background: url(../assets/team/person_1.jpg) no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+
+
+/* Clients */
+
+.clients .col-lg-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.single_brand {
+    border: 1px solid var(--border-color);
+    text-align: center;
+    padding: 1.8rem 0;
+    margin: .9rem 0;
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform .4s ease;
+    vertical-align: middle;
+}
+
+.single_brand img {
+    width: 50%;
+}
+
+.single_brand:hover {
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+}
+
+.single_brand:hover img {
+    filter: brightness(0.15);
+
+}
+
+/* End About Area */
+
+/* Start Services Area */
+.services_area {
+    padding: 5rem 2rem;
+}
+
+.services {
+    background: rgb(234, 247, 250);
+    margin: 1rem;
+    padding: 1rem 0;
+}
+
+.services:hover {
+    box-shadow: var(--box-shadow);
+    transition: .4s ease;
+    cursor: pointer;
+}
+
+.services_img img {
+    width: 25%;
+}
+
+.card-body h5 {
+    font: normal 600 20px/25px var(--roboto);
+}
+
+.card-body p {
+    font: normal 500 14px/15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* End Services Area */
+
+/* Start Portfolio Area */
+
+.awsome_menu {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.awsome_menu ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+.awsome_menu ul li {
+    display: inline-block;
+}
+
+.awsome_menu ul li a {
+    background: #fff no-repeat scroll 0 0;
+    border: 1px solid #444;
+    border-radius: 40px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 .7rem;
+    transition: all .3s ease;
+    padding: 5px 12px;
+    text-decoration: none;
+    color: black;
+}
+
+.awsome_menu ul li a:hover {
+    background: #007BFF;
+    color: white !important;
+    transition: .4s;
+}
+
+.awsome_menu ul li .active {
+    background: #007BFF;
+    color: white;
+}
+
+.our_project .title h1 {
+    font: normal 600 20px/25px var(--roboto);
+}
+
+.our_project .title span {
+    font: normal 500 14px/20px serif;
+}
+
+.grid {
+    display: block !important;
+}
+
+.our_project img:hover {
+    filter: brightness(.9);
+}
+
+/* End Portfolio Area */
+
+/* Start Testimonial Area */
+
+.testimonial_area {
+    background-image: url(../assets/banner/Banner_image.jpg);
+    position: relative;
+    padding: 3rem 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+.testimonial_clients {
+    margin: 0 2rem !important;
+    background: transparent;
+    padding: 1rem 2rem;
+    border: 2px solid #007BFF;
+
+}
+
+
+.about-client h4 {
+    color: white;
+    font: normal 600 20px/25px var(--roboto);
+}
+
+.about-client p {
+    color: whitesmoke;
+    font: normal 500 14px/15px 'Courier New', Courier, monospace;
+}
+
+/* End Testimonial Area */
+
+/* Start Contact Us Area */
+.contect_us {
+    background-color: #4458dc2f;
+    padding: 3rem;
+}
+
+.contect_us form {
+    padding: 4rem 5rem 1rem 5rem;
+}
+
+.contect_us form input,
+.contect_us form textarea {
+    background-color: #4458dc49;
+    outline: none;
+}
+.contect_us form input::placeholder,
+.contect_us form textarea::placeholder{
+    color: black;
+}
+
+.contect_us form input:focus,
+.contect_us form textarea:focus{
+    outline: none;
+    background: #4458df49;
+    border: none;
+}
+
+
+/* End Contact Us Area */
+
+/* Start Footer Area */
+footer {
+    background-color: #4458dc2f;
+    padding-bottom: 3rem;
+}
+
+footer span {
+    font-family: var(--roboto);
+    font-weight: bold;
+}
+
+footer h5 {
+    font: normal 500 20px/25px serif;
+}
+
+/* End Footer Area */
